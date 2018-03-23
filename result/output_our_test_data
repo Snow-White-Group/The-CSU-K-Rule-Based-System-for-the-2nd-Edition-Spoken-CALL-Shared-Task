@@ -1,0 +1,343 @@
+[nltk_data] Downloading package punkt to /home/djuelg/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+[nltk_data] Downloading package stopwords to /home/djuelg/nltk_data...
+[nltk_data]   Package stopwords is already up-to-date!
+[nltk_data] Downloading package wordnet to /home/djuelg/nltk_data...
+[nltk_data]   Package wordnet is already up-to-date!
+Initializing gensim
+Read XML grammar: referenceGrammar_v3.0.0.xml
+Creating tokenized grammar 
+Reading and processing spreadsheet: test.csv
+FR (): [('where', 'WRB'), ('is', 'VBZ'), ('the', 'DT'), ('oxford', 'JJ'), ('street', 'NN')]                  || Frag: Wo ist die Oxford Street?
+PFA: [('i', 'NN'), ('would', 'MD'), ('like', 'VB'), ('a', 'DT'), ('orange', 'NN'), ('juice', 'NN')]                  || Frag: einen Orangensaft || i would like a orange juice
+GFA: [('i', 'NN'), ('would', 'MD'), ('like', 'VB'), ('the', 'DT'), ('custard', 'NN'), ('tart', 'NN')]                  || Frag: Custard Tart || i would like the custard*z tart
+PFA: [('i', 'NNS'), ('have', 'VBP'), ('not', 'RB'), ('a', 'DT'), ('reservation', 'NN')]                  || Sag: Ich habe keine Reservation || i have not a reservation
+GFA: [('saint', 'NN'), ('pauls', 'JJ'), ('cathedral', 'NN'), ('is', 'VBZ'), ('near', 'IN'), ('of', 'IN'), ('the', 'DT'), ('bank', 'NN'), ('of', 'IN'), ('england', 'NN')]                  || Sag: Saint Pauls Cathedral ist nahe der Bank of England || saint*z pauls*z cathedral*z is in near of the bank england
+FR (): [('turkey', 'NN'), ('is', 'VBZ'), ("n't", 'RB'), ('africa', 'JJ')]                  || Sag: Die Türkei ist nicht in Afrika
+PFA: [('this', 'DT'), ('is', 'VBZ'), ("n't", 'RB'), ('now', 'RB'), ('what', 'WP'), ('i', 'NN'), ('ordered', 'VBD'), ('to', 'TO')]                  || Sag: Dies ist nicht was ich bestellt habe || this isn't now what i ordered to
+PFA: [('two', 'CD'), ('tickets', 'NNS'), ('for', 'IN'), ('lion', 'NN'), ('king', 'NN')]                  || Frag: 2 Tickets für König der Löwen || two tickets for lion of kings
+FR (): [('i', 'JJ'), ("'d", 'MD'), ('like', 'VB'), ('two', 'CD'), ('tickets', 'NNS'), ('for', 'IN'), ('the', 'DT'), ('natural', 'JJ'), ('history', 'NN'), ('museum', 'NN'), ('please', 'NN')]                  || Frag: Tickets für das Naturhistorische Museum
+FR (): [('do', 'VBP'), ('you', 'PRP'), ('have', 'VB'), ('a', 'DT'), ('ticket', 'NN'), ('to', 'TO'), ('towel', 'VB'), ('trafalgar', 'NN'), ('square', 'NN')]                  || Frag: ein Ticket zum Trafalgar Square
+PFA: [('a', 'DT'), ('ticket', 'NN'), ('of', 'IN'), ('the', 'DT'), ('phantom', 'NN'), ('of', 'IN'), ('the', 'DT'), ('opera', 'NN')]                  || Frag: 1 Ticket für das Phantom der Oper || a ticket*z of the phantom of the opera
+PFA: [('i', 'NN'), ('want', 'VBP'), ('to', 'TO'), ('leave', 'VB'), ('at', 'IN'), ('friday', 'JJ'), ('night', 'NN')]                  || Sag: Ich möchte am Freitagabend abreisen || i want to leave at friday night
+PFA: [('i', 'JJ'), ("'d", 'MD'), ('like', 'VB'), ('a', 'DT'), ('ticket', 'NN'), ('to', 'TO'), ('westminster', 'VB')]                  || Frag: ein Ticket nach Westminster || i'd like a ticket to the westminster
+PFA: [('i', 'NNS'), ('have', 'VBP'), ('not', 'RB'), ('a', 'DT'), ('reservation', 'NN')]                  || Sag: Ich habe keine Reservation || i have not a reservation
+GFA: [('i', 'NN'), ('would', 'MD'), ('like', 'VB'), ('pea', 'NN')]                  || Frag: Erbsen || i would like pea
+PFA: [('i', 'JJ'), ("'m", 'VBP'), ('from', 'IN'), ('australian', 'JJ')]                  || Sag: Ich bin aus Australien || i'm from australian*v
+PFA: [('i', 'JJ'), ("'m", 'VBP'), ('from', 'IN'), ('german', 'JJ')]                  || Sag: Ich bin aus Deutschland || i am from german*z
+PFA: [('i', 'NN'), ('would', 'MD'), ('like', 'VB'), ('to', 'TO'), ('pay', 'VB'), ('be', 'VB'), ('visa', 'JJ')]                  || Sag: Ich möchte mit Visa bezahlen || i would like to pay be visa
+PFA: [('two', 'CD'), ('tickets', 'NNS'), ('for', 'IN'), ('lion', 'NN'), ('king', 'NN')]                  || Frag: 2 Tickets für König der Löwen || two tickets for lion king
+PFA: [('i', 'NN'), ('want', 'VBP'), ('pay', 'NN'), ('with', 'IN'), ('credit', 'NN'), ('card', 'NN')]                  || Sag: Ich möchte mit Kreditkarte bezahlen || i want pay with credit card
+PFA: [('i', 'NN'), ('would', 'MD'), ('like', 'VB'), ('pay', 'NN'), ('with', 'IN'), ('mastercard', 'NN')]                  || Sag: Ich möchte mit Mastercard bezahlen || i would like pay with mastercard
+PFA: [('how', 'WRB'), ('much', 'JJ'), ('does', 'VBZ'), ('the', 'DT'), ('trousers', 'NNS'), ('cost', 'NN')]                  || Frag: Wie viel kostet die Hose? || how much does the trousers cost
+PFA: [('i', 'NN'), ('want', 'VBP'), ('steak', 'NN'), ('rare', 'NN')]                  || Frag: mein Steak rare || i want steak rare
+PFA: [('would', 'MD'), ('like', 'VB'), ('white', 'JJ'), ('boots', 'NNS')]                  || Frag: weisse Stiefel || would like white boots
+GFA: [('there', 'EX'), ('is', 'VBZ'), ('the', 'DT'), ('lift', 'NN')]                  || Frag: Wo ist der Lift? || there is the lift
+PFA: [('where', 'WRB'), ('i', 'NN'), ('can', 'MD'), ('buy', 'VB'), ('shampoo', 'NNS')]                  || Frag: Wo kann ich ein Shampoo kaufen? || where i can buy shampoo
+PFA: [('i', 'NN'), ('would', 'MD'), ('have', 'VB'), ('a', 'DT'), ('ticket', 'NN'), ('to', 'TO'), ('london', 'VB')]                  || Frag: ein Ticket nach London || i would have a ticket to london
+PFA: [('i', 'NN'), ('will', 'MD'), ('pay', 'VB'), ('with', 'IN'), ('credit', 'NN'), ('card', 'NN')]                  || Sag: Ich möchte mit Kreditkarte bezahlen || i will pay with credit card
+PFA: [('i', 'NNS'), ('have', 'VBP'), ("n't", 'RB'), ('reservation', 'NN')]                  || Sag: Ich habe keine Reservation || i haven't reservation
+PFA: [('can', 'MD'), ('i', 'VB'), ('you', 'PRP'), ('have', 'VBP'), ('a', 'DT'), ('single', 'JJ'), ('room', 'NN'), ('please', 'NN')]                  || Frag: Einzelzimmer || can i you have a single room please
+PFA: [('i', 'NNS'), ('do', 'VBP'), ('not', 'RB'), ('a', 'DT'), ('reservation', 'NN')]                  || Sag: Ich habe keine Reservation || i do not a reservation
+FR (): [('i', 'NN'), ('have', 'VBP'), ('only', 'RB'), ('big', 'JJ'), ('notes', 'NNS')]                  || Sag: Ich habe nur grosse Noten
+PFA: [('can', 'MD'), ('i', 'VB'), ('pay', 'NN'), ('with', 'IN'), ('credit', 'NN'), ('card', 'NN')]                  || Sag: Ich möchte mit Kreditkarte bezahlen || can i pay with credit card
+GFA: [('who', 'WP'), ('is', 'VBZ'), ('the', 'DT'), ('hairdresser', 'NN')]                  || Frag: Wo ist der Coiffeur? || who is the hairdresser
+FR (): [('i', 'NN'), ('want', 'VBP'), ('a', 'DT'), ('room', 'NN'), ('for', 'IN'), ('the', 'DT'), ('next', 'JJ'), ('three', 'CD'), ('uh', 'JJ'), ('six', 'CD'), ('nights', 'NNS')]                  || Frag: Zimmer für 6 Nächte
+PFA: [('have', 'VB'), ('it', 'PRP'), ('a', 'DT'), ('fitness', 'NN'), ('centre', 'NN')]                  || Frag: Gibt es ein Fitnessstudio? || have it a fitness studio
+PFA: [('i', 'NN'), ('would', 'MD'), ('like', 'VB'), ('a', 'DT'), ('room', 'NN'), ('for', 'IN'), ('five', 'CD'), ('nights', 'NNS')]                  || Frag: Zimmer für 5 Nächte || i would like a room for five night
+GFA: [('is', 'VBZ'), ('there', 'EX'), ('a', 'DT'), ('fitness', 'NN'), ('centre', 'NN')]                  || Frag: Gibt es ein Fitnessstudio? || there a fitness centre
+PFA: [('is', 'VBZ'), ('there', 'EX'), ('the', 'DT'), ('hotel', 'NN'), ('bar', 'NN')]                  || Frag: Gibt es eine Hotelbar? || is there the hotel*z bar
+PFA: [('is', 'VBZ'), ('there', 'EX'), ('the', 'DT'), ('hotel', 'NN'), ('bar', 'NN')]                  || Frag: Gibt es eine Hotelbar? || is there the hotel*z bar
+GFA: [('i', 'NN'), ('want', 'VBP'), ('a', 'DT'), ('twin', 'NN'), ('room', 'NN'), ('please', 'NN')]                  || Frag: Twinzimmer || i want a tree room please
+PFA: [('i', 'NN'), ('want', 'VBP'), ('a', 'DT'), ('room', 'NN'), ('for', 'IN'), ('two', 'CD'), ('nights', 'NNS')]                  || Frag: Zimmer für 2 Nächte || i want a room for two nights
+PFA: [('i', 'NN'), ('would', 'MD'), ('like', 'VB'), ('to', 'TO'), ('leave', 'VB'), ('tomorrow', 'NN'), ('at', 'IN'), ('five', 'CD'), ("o'clock", 'NN')]                  || Sag: Ich möchte um 17 Uhr morgen abreisen || i would to leave tomorrow at five o'clock
+PFA: [('i', 'NN'), ('would', 'MD'), ('like', 'VB'), ('an', 'DT'), ('hamburger', 'NN')]                  || Frag: einen Hamburger || i would like an hamburger
+PFA: [('no', 'DT'), ('i', 'NN'), ('do', 'VBP'), ("n't", 'RB'), ('not', 'RB'), ('have', 'VB'), ('a', 'DT'), ('reservation', 'NN')]                  || Sag: Ich habe keine Reservation || no i don't not have a reservation
+GFA: [('i', 'NNS'), ('need', 'VBP'), ('a', 'DT'), ('ticket', 'NN'), ('to', 'TO'), ('trafalgar', 'VB'), ('square', 'NN')]                  || Frag: ein Ticket zum Trafalgar Square || i need a ticket to falgar square
+PFA: [('no', 'DT'), ('i', 'NN'), ('do', 'VBP'), ("n't", 'RB'), ('not', 'RB'), ('have', 'VB'), ('a', 'DT'), ('reservation', 'NN')]                  || Sag: Ich habe keine Reservation || no i don't not have a reservation
+PFA: [('no', 'DT'), ('thank', 'NN'), ('you', 'PRP'), ('the', 'DT'), ('trousers', 'NNS'), ('is', 'VBZ'), ('too', 'RB'), ('expensive', 'JJ')]                  || Sag: Die Hose ist zu teuer || no thank you the trousers is too expensive
+GFA: [('i', 'NN'), ('want', 'VBP'), ('with', 'IN'), ('card', 'NN'), ('pay', 'NN')]                  || Sag: Ich möchte mit Kreditkarte bezahlen || i want with credit*z card pay
+FR (): [('um', 'NN'), ('i', 'NN'), ("'d", 'MD'), ('like', 'VB'), ('a', 'DT'), ('single', 'JJ'), ('room', 'NN')]                  || Frag: Einzelzimmer
+FR (): [('where', 'WRB'), ('is', 'VBZ'), ('the', 'DT'), ('fit', 'JJ'), ('fitness', 'NN'), ('room', 'NN'), ('please', 'NN')]                  || Frag: Wo ist das Fitnessstudio?
+FR (): [('and', 'CC'), ('um', 'JJ'), ('can', 'MD'), ('i', 'VB'), ('have', 'VBP'), ('tickets', 'NNS'), ('for', 'IN'), ('the', 'DT'), ('science', 'NN'), ('museum', 'NN')]                  || Frag: Tickets für das Science Museum
+FR (): [('um', 'JJ'), ('i', 'NN'), ('want', 'VBP'), ('boots', 'NNS')]                  || Frag: Stiefel
+FR (): [('for', 'IN'), ('seven', 'CD'), ('nights', 'NNS'), ('please', 'VB')]                  || Frag: Zimmer für 7 Nächte
+PFA: [('i', 'NN'), ('am', 'VBP'), ('on', 'IN'), ('holiday', 'NN')]                  || Sag: Ich gehe in die Ferien || i on holiday
+PFA: [('this', 'DT'), ('trousers', 'NNS'), ('are', 'VBP'), ('too', 'RB'), ('expensive', 'JJ')]                  || Sag: Die Hose ist zu teuer || this trousers are too expensive
+PFA: [('i', 'NN'), ('am', 'VBP'), ('from', 'IN'), ('german', 'JJ')]                  || Sag: Ich bin aus Deutschland || i am from german
+PFA: [('i', 'NN'), ('would', 'MD'), ('like', 'VB'), ('pay', 'NN'), ('with', 'IN'), ('visa', 'NN')]                  || Sag: Ich möchte mit Visa bezahlen || i would like pay with visa
+FR (): [('i', 'NN'), ('want', 'VBP'), ('three', 'CD'), ('tickets', 'NNS'), ('to', 'TO'), ('a', 'DT'), ('musical', 'JJ')]                  || Frag: 3 Musical-Tickets
+FR (): [('i', 'NNS'), ('have', 'VBP'), ('four', 'CD'), ('photo', 'NN'), ('i', 'NNS'), ('have', 'VBP'), ('four', 'CD'), ('older', 'JJR'), ('brothers', 'NNS')]                  || Sag: Ich habe 4 ältere Brüder
+PFA: [('the', 'DT'), ('capital', 'NN'), ('from', 'IN'), ('portugal', 'NN'), ('is', 'VBZ'), ('lisbon', 'JJ')]                  || Sag: Die Hauptstadt von Portugal ist Lissabon || the capital from portugal is lisbon
+PFA: [('the', 'DT'), ('capital', 'NN'), ('from', 'IN'), ('italy', 'NN'), ('is', 'VBZ'), ('rome', 'JJ')]                  || Sag: Die Hauptstadt von Italien ist Rom || the capital from italy is rome
+PFA: [('i', 'NN'), ('want', 'VBP'), ('a', 'DT'), ('carbonated', 'JJ'), ('water', 'NN')]                  || Frag: ein Wasser mit Kohlensäure || i want the carbonants water
+FR (): [('i', 'NNS'), ('have', 'VBP'), ('no', 'DT'), ('uh', 'JJ'), ('reservation', 'NN')]                  || Sag: Ich habe keine Reservation
+PFA: [('i', 'NN'), ('would', 'MD'), ('like', 'VB'), ('pay', 'NN'), ('by', 'IN'), ('mastercard', 'NN')]                  || Sag: Ich möchte mit Mastercard bezahlen || i would like pay by mastercard
+PFA: [('i', 'NNS'), ('have', 'VBP'), ('not', 'RB'), ('a', 'DT'), ('reservation', 'NN')]                  || Sag: Ich habe keine Reservation || i have not a reservation
+PFA: [('i', 'NNS'), ('have', 'VBP'), ('not', 'RB'), ('a', 'DT'), ('reservation', 'NN')]                  || Sag: Ich habe keine Reservation || i have not a reservation
+PFA: [('i', 'NN'), ('would', 'MD'), ('like', 'VB'), ('tickets', 'NNS'), ('for', 'IN'), ('the', 'DT'), ('national', 'JJ'), ('gallery', 'NN')]                  || Frag: Tickets für die National Gallery || i would like ticket for the national gallery
+FR (): [('i', 'NN'), ('would', 'MD'), ('like', 'VB'), ('go', 'VB'), ('jeans', 'NNS')]                  || Frag: Auberginen
+PFA: [('saint', 'NN'), ('pauls', 'JJ'), ('cathedral', 'NN'), ('is', 'VBZ'), ('near', 'IN'), ('of', 'IN'), ('the', 'DT'), ('bank', 'NN'), ('of', 'IN'), ('england', 'NN')]                  || Sag: Saint Pauls Cathedral ist nahe der Bank of England || saint pauls cathedral is near of the bank of england
+PFA: [('big', 'JJ'), ('ben', 'NN'), ('is', 'VBZ'), ('next', 'JJ'), ('to', 'TO'), ('the', 'DT'), ('houses', 'NNS'), ('of', 'IN'), ('parliament', 'NN')]                  || Sag: Big Ben ist neben den Houses of Parliament || big ben is next to the house of parliament
+PFA: [('i', 'NN'), ('would', 'MD'), ('like', 'VB'), ('to', 'TO'), ('pay', 'VB'), ('with', 'IN'), ('the', 'DT'), ('credit', 'NN'), ('card', 'NN')]                  || Sag: Kann ich mit Kreditkarte bezahlen || i would like to pay with the credit card
+PFA: [('could', 'MD'), ('i', 'VB'), ('have', 'VBP'), ('a', 'DT'), ('orange', 'NN'), ('juice', 'NN')]                  || Frag: einen Orangensaft || could i have a orange juice
+PFA: [('i', 'JJ'), ("'m", 'VBP'), ('from', 'IN'), ('french', 'JJ')]                  || Sag: Ich bin aus Frankreich || i'm from french
+PFA: [('can', 'MD'), ('i', 'VB'), ('have', 'VBP'), ('boot', 'NN')]                  || Frag: Stiefel || can i have boots
+GFA: [('a', 'DT'), ('hairdresser', 'NN')]                  || Frag: Gibt es einen Coiffeur? || a hairdresser
+FR (): [('yes', 'NNS'), ('i', 'VBP'), ('want', 'VBP'), ('a', 'DT'), ('ticket', 'NN'), ('for', 'IN'), ('that', 'DT'), ('musical', 'JJ')]                  || Frag: Ticket für dieses Musical
+PFA: [('i', 'NN'), ('want', 'VBP'), ('pay', 'NN'), ('with', 'IN'), ('card', 'NN')]                  || Sag: Ich möchte mit Kreditkarte bezahlen || i want pay with card
+PFA: [('i', 'NN'), ('from', 'IN'), ('canada', 'NN')]                  || Sag: Ich bin aus Kanada || i from canada
+FR (): [('the', 'DT'), ('caption', 'NN'), ('of', 'IN'), ('spain', 'NN'), ('is', 'VBZ'), ('madrid', 'JJ')]                  || Sag: Die Hauptstadt von Spanien ist Madrid
+FR (): [('could', 'MD'), ('i', 'VB'), ('have', 'VBP'), ('some', 'DT'), ('please', 'NN')]                  || Frag: Auberginen
+PFA: [('i', 'NN'), ('will', 'MD'), ('a', 'DT'), ('room', 'NN'), ('for', 'IN'), ('six', 'CD'), ('nights', 'NNS')]                  || Frag: Zimmer für 6 Nächte || i will a a room for six nights
+PFA: [('have', 'VB'), ('it', 'PRP'), ('a', 'DT'), ('fitness', 'NN'), ('studio', 'NN')]                  || Frag: Gibt es ein Fitnessstudio? || have it a fitness studio
+PFA: [('i', 'NN'), ('want', 'VBP'), ('to', 'TO'), ('pay', 'VB'), ('with', 'IN'), ('euro', 'NN')]                  || Sag: Ich möchte mit Euros bezahlen || i want to pay with euro*z
+PFA: [('i', 'NN'), ('would', 'MD'), ('pay', 'VB'), ('with', 'IN'), ('mastercard', 'JJ'), ('please', 'NN')]                  || Sag: Ich möchte mit Mastercard bezahlen || i would pay with mastercard please
+PFA: [('i', 'NN'), ('would', 'MD'), ('like', 'VB'), ('pay', 'NN'), ('with', 'IN'), ('euro', 'NN')]                  || Sag: Ich möchte mit Euros bezahlen || i would like pay with euro
+PFA: [('i', 'NN'), ('will', 'MD'), ('a', 'DT'), ('room', 'NN'), ('for', 'IN'), ('three', 'CD'), ('nights', 'NNS')]                  || Frag: Zimmer für 3 Nächte || i will a room for three nights
+PFA: [('i', 'NN'), ('would', 'MD'), ('pay', 'VB'), ('with', 'IN'), ('mastercard', 'NN')]                  || Sag: Ich möchte mit Mastercard bezahlen || i would pay with mastercard
+PFA: [('i', 'NN'), ('like', 'IN'), ('one', 'CD'), ('musical', 'JJ'), ('ticket', 'NN')]                  || Frag: 1 Musical-Ticket || i like one musical ticket
+PFA: [('do', 'VB'), ('the', 'DT'), ('hotel', 'NN'), ('have', 'VBP'), ('a', 'DT'), ('bar', 'NN')]                  || Frag: Gibt es eine Hotelbar? || do the hotel have a bar
+PFA: [('do', 'VB'), ('the', 'DT'), ('hotel', 'NN'), ('have', 'VBP'), ('a', 'DT'), ('bar', 'NN')]                  || Frag: Gibt es eine Hotelbar? || do the hotel have a bar
+PFA: [('do', 'VB'), ('the', 'DT'), ('hotel', 'NN'), ('have', 'VBP'), ('a', 'DT'), ('lift', 'NN')]                  || Frag: Gibt es einen Lift? || do the hotel*z have a lift
+GFA: [('does', 'VBZ'), ('it', 'PRP'), ('have', 'VB'), ('a', 'DT'), ('junior', 'JJ'), ('suite', 'NN')]                  || Frag: Junior Suite || does it have a junior*z sui*a suite
+FR (): [('i', 'NN'), ('would', 'MD'), ('like', 'VB'), ('two', 'CD'), ('three', 'CD'), ('tickets', 'NNS'), ('to', 'TO'), ('london', 'VB')]                  || Frag: 3 Tickets nach London
+FR (): [('two', 'CD'), ('tickets', 'NNS'), ('to', 'TO'), ('london', 'VB'), ('shirt', 'JJ'), ('two', 'CD'), ('tickets', 'NNS'), ('to', 'TO'), ('london', 'VB'), ('please', 'NN')]                  || Frag: 2 Tickets nach London
+PFA: [('i', 'NN'), ('would', 'MD'), ('like', 'VB'), ('to', 'TO'), ('leave', 'VB'), ('at', 'IN'), ('saturday', 'JJ'), ('evening', 'VBG')]                  || Sag: Ich möchte am Samstagabend abreisen || i would like to leave at saturday evening
+PFA: [('i', 'NN'), ('would', 'MD'), ('like', 'VB'), ('to', 'TO'), ('have', 'VB'), ('a', 'DT'), ('ticket', 'NN'), ('to', 'TO'), ('the', 'DT'), ('notting', 'NN'), ('hill', 'NN')]                  || Frag: ein Ticket nach Notting Hill || i would like to have a ticket to the notting hill
+PFA: [('the', 'DT'), ('capital', 'NN'), ('of', 'IN'), ('portugal', 'NN'), ('is', 'VBZ')]                  || Sag: Die Hauptstadt von Portugal ist Lissabon || the capital of portugal is lissabon*v
+PFA: [('the', 'DT'), ('room', 'NN'), ('has', 'VBZ'), ('not', 'RB'), ('a', 'DT'), ('hairdryer', 'NN')]                  || Sag: Im Zimmer hat es keinen Haarföhn || the room has not a hairdryer
+PFA: [('hairdryer', 'NN')]                  || Frag: Haarföhn || hairdryer
+FR (): [('have', 'VB'), ('a', 'DT'), ('fitness', 'NN'), ('room', 'NN')]                  || Frag: Gibt es ein Fitnessstudio?
+GFA: [('do', 'VBP'), ('you', 'PRP'), ('have', 'VB'), ('a', 'DT'), ('room', 'NN'), ('for', 'IN'), ('this', 'DT'), ('night', 'NN')]                  || Frag: Zimmer für 5 Nächte || do you have a room for this night
+FR (): [('i', 'NN'), ('would', 'MD'), ('like', 'VB'), ('a', 'DT'), ('pay', 'NN'), ('potato', 'NN')]                  || Frag: einen Baked Potato
+PFA: [('i', 'NN'), ('want', 'VBP'), ('a', 'DT'), ('suite', 'NN')]                  || Frag: Suite || i want the suite
+FR (): [('i', 'NN'), ('am', 'VBP'), ('a', 'DT'), ('thirty', 'NN'), ('dollars', 'NNS')]                  || Frag: Grösse 37
+FR (): [('is', 'VBZ'), ('there', 'EX'), ('the', 'DT'), ('boots', 'NNS'), ('room', 'NN')]                  || Frag: Gibt es einen Lebensmittelladen?
+PFA: [('where', 'WRB'), ('can', 'MD'), ('i', 'VB'), ('buy', 'VB'), ('some', 'DT'), ('shampoo', 'NN')]                  || Frag: Wo kann ich ein Shampoo kaufen? || where can i buy the shampoo
+PFA: [('can', 'MD'), ('i', 'VB'), ('pay', 'NN'), ('with', 'IN'), ('pounds', 'NNS')]                  || Sag: Ich möchte mit Pfund bezahlen || can i pay by pounds
+FR (): [('i', 'JJ'), ("'d", 'MD'), ('like', 'VB'), ('a', 'DT'), ('ticket', 'NN'), ('for', 'IN'), ('monday', 'NN'), ('evening', 'NN')]                  || Frag: ein Ticket für Sonntagabend
+FR (): [('i', 'NN'), ('am', 'VBP'), ('brown', 'NN')]                  || Sag: Ich heisse Sarah
+FR (): [('my', 'PRP$'), ('name', 'NN'), ('is', 'VBZ'), ('pool', 'NN')]                  || Sag: Ich heisse Paul
+FR (): [('i', 'NNS'), ('have', 'VBP'), ('four', 'CD'), ('older', 'JJR'), ('brothers', 'NNS')]                  || Sag: Ich habe 4 Brüder
+FR (): [('i', 'NN'), ('would', 'MD'), ('like', 'VB'), ('mushrooms', 'NNS')]                  || Frag: einen Orangensaft
+FR (): [('i', 'NN'), ('want', 'VBP'), ('a', 'DT'), ('suite', 'NN')]                  || Frag: ein Steak
+FR (): [('i', 'JJ'), ("'d", 'MD'), ('like', 'VB'), ('the', 'DT'), ('custard', 'NN'), ('tart', 'NN')]                  || Frag: Ich möchte die Dessertkarte
+FR (): [('could', 'MD'), ('i', 'VB'), ('have', 'VBP'), ('white', 'JJ'), ('boots', 'NNS')]                  || Frag: Vanilleglace
+FR (): [('i', 'NN'), ("'m", 'VBP'), ('looking', 'VBG'), ('hotel', 'NN'), ('bar', 'NN')]                  || Frag: Hosen
+FR (): [('my', 'PRP$'), ('bathroom', 'NN'), ('is', 'VBZ'), ('dirty', 'JJ')]                  || Frag: weisse Sandalen
+FR (): [('i', 'NN'), ('want', 'VBP'), ('suite', 'NN')]                  || Frag: Jeans
+FR (): [('i', 'NN'), ("'m", 'VBP'), ('going', 'VBG'), ('lisbon', 'NN')]                  || Sag du möchtest nicht: diese Jeans
+FR (): [('i', 'NN'), ('tomorrow', 'NN')]                  || Sag, dass du es nicht möchtest
+FR (): [('i', 'NN'), ('would', 'MD'), ('like', 'VB'), ('the', 'DT'), ('sunday', 'NN'), ('row', 'NN')]                  || Frag: den Sonntagsbraten
+FR (): [('i', 'NN'), ('want', 'VBP'), ('a', 'DT'), ('twin', 'NN'), ('room', 'NN')]                  || Frag: Trifle
+FR (): [('yellow', 'JJ'), ('arch', 'NN'), ('is', 'VBZ'), ('opposite', 'JJ'), ('hyde', 'NN'), ('park', 'NN')]                  || Sag: Marble Arch ist gegenüber dem Hyde Park
+PFA: [('there', 'EX'), ('is', 'VBZ'), ("n't", 'RB'), ('a', 'DT'), ('hairdryer', 'NN'), ('in', 'IN'), ('the', 'DT'), ('room', 'NN')]                  || Sag: Im Zimmer hat es keinen Haarföhn || there isn't a hairdryer in the room
+PFA: [('no', 'DT'), ('i', 'NN'), ('have', 'VBP'), ("n't", 'RB'), ('got', 'VBD'), ('a', 'DT'), ('reservation', 'NN')]                  || Sag: Ich habe keine Reservation || no i haven't a reservation
+PFA: [('i', 'JJ'), ("'m", 'VBP'), ('from', 'IN'), ('australian', 'JJ')]                  || Sag: Ich bin aus Australien || i'm from australian
+FR (): [('i', 'NN'), ('want', 'VBP'), ('to', 'TO'), ('sit', 'VB'), ('in', 'IN'), ('the', 'DT'), ('from', 'IN'), ('row', 'NN')]                  || Sag: Ich möchte in der ersten Reihe sitzen
+FR (): [('i', 'NN'), ('want', 'VBP'), ('to', 'TO'), ('boots', 'VB')]                  || Sag: Ich muss gehen
+FR (): [('i', 'NN'), ("'m", 'VBP'), ('censored', 'VBN'), ('juice', 'NN')]                  || Frag: rote Jeans
+FR (): [('i', 'NN'), ('like', 'IN'), ('the', 'DT'), ('steak', 'NN')]                  || Frag: ein Steak
+FR (): [('i', 'NN'), ('want', 'VBP'), ('room', 'NN'), ('garlic', 'NN'), ('bread', 'NN')]                  || Frag: etwas Knoblauchbrot
+PFA: [('i', 'NNS'), ('have', 'VBP'), ("n't", 'RB'), ('got', 'VBD'), ('a', 'DT'), ('reservation', 'NN')]                  || Sag: Ich habe keine Reservation || i haven't a reservation
+FR (): [('i', 'NN'), ('want', 'VBP'), ('to', 'TO'), ('leave', 'VB'), ('next', 'JJ'), ('room', 'NN')]                  || Sag: Ich möchte nächste Woche abreisen
+FR (): [('i', 'NN'), ('want', 'VBP'), ('to', 'TO'), ('sit', 'VB'), ('afternoon', 'NN')]                  || Sag: Ich möchte vorne sitzen
+FR (): [('i', 'NN'), ('want', 'VBP'), ('to', 'TO'), ('sit', 'VB'), ('in', 'IN'), ('the', 'DT'), ('first', 'JJ'), ('boots', 'NNS')]                  || Sag: Ich möchte in der ersten Reihe sitzen
+PFA: [('i', 'NN'), ('want', 'VBP'), ('tickets', 'NNS'), ('for', 'IN'), ('saturday', 'JJ'), ('evening', 'NN')]                  || Frag: ein Ticket für Samstagabend || i'd like tickets for saturday evening
+FR (): [('i', 'JJ'), ("'d", 'MD'), ('like', 'VB'), ('to', 'TO'), ('sit', 'VB'), ('in', 'IN'), ('the', 'DT'), ('card', 'NN'), ('blue', 'NN')]                  || Sag: Ich möchte in der vierten Reihe sitzen
+PFA: [('this', 'DT'), ('is', 'VBZ'), ('not', 'RB'), ('what', 'WP'), ('i', 'NN'), ('ordered', 'VBD')]                  || Sag: Dies ist nicht was ich bestellt habe || this is not that what i ordered
+FR (): [('i', 'JJ'), ("'d", 'MD'), ('like', 'VB'), ('the', 'DT'), ('soup', 'NN'), ('of', 'IN'), ('the', 'DT'), ('steak', 'NN')]                  || Frag: die Tagessuppe
+FR (): [('i', 'NN'), ('would', 'MD'), ('like', 'VB'), ('a', 'DT')]                  || Frag: Hosen
+PFA: [('the', 'DT'), ('trousers', 'NNS'), ('is', 'VBZ'), ('too', 'RB'), ('expensive', 'JJ')]                  || Sag: Die Hose ist zu teuer || the pants is too expensive
+FR (): [('i', 'NN'), ('there', 'EX'), ('one', 'CD'), ('brothers', 'NNS')]                  || Sag: Ich habe 1 Bruder
+PFA: [('no', 'DT'), ('i', 'NN'), ('have', 'VBP'), ("n't", 'RB'), ('got', 'VBD'), ('a', 'DT'), ('reservation', 'NN')]                  || Sag: Ich habe keine Reservation || no i haven't a reservation
+PFA: [('can', 'MD'), ('i', 'VB'), ('pay', 'NN'), ('with', 'IN'), ('credit', 'NN'), ('card', 'NN')]                  || Sag: Ich möchte mit Kreditkarte bezahlen || can i pay with credit card
+PFA: [('no', 'DT'), ('i', 'NN'), ('have', 'VBP'), ('not', 'RB'), ('a', 'DT'), ('reservation', 'NN')]                  || Sag: Ich habe keine Reservation || no i have not a reservation
+PFA: [('i', 'NNS'), ('do', 'VBP'), ('not', 'RB'), ('have', 'VB'), ('a', 'DT'), ('reservation', 'NN')]                  || Sag: Ich habe keine Reservation || i do not have reservation
+GFA: [('i', 'NN'), ('want', 'VBP'), ('a', 'DT'), ('room', 'NN'), ('for', 'IN'), ('three', 'CD'), ('nights', 'NNS')]                  || Frag: Zimmer für 3 Nächte || i want a room for two nights
+PFA: [('can', 'MD'), ('i', 'VB'), ('pay', 'NN'), ('with', 'IN'), ('post', 'NN'), ('card', 'NN')]                  || Sag: Ich möchte mit Postkarte bezahlen || can i pay with the post card
+PFA: [('i', 'NN'), ('want', 'VBP'), ('tickets', 'NNS'), ('for', 'IN'), ('mamma', 'NN'), ('mia', 'NN')]                  || Frag: ein Ticket für Mamma Mia || want tickets for mamma mia
+FR (): [('can', 'MD'), ('i', 'VB'), ('buy', 'VB'), ('with', 'IN'), ('mastercard', 'NN')]                  || Sag: Ich möchte mit Mastercard bezahlen
+FR (): [('where', 'WRB'), ('is', 'VBZ'), ('the', 'DT'), ('history', 'NN')]                  || Sag: Ich heisse Stephanie
+FR (): [('a', 'DT'), ('room', 'NN'), ('for', 'IN')]                  || Frag: blaue Sandalen
+GFA: [('i', 'NN'), ('would', 'MD'), ('like', 'VB'), ('tickets', 'NNS'), ('for', 'IN'), ('the', 'DT'), ('natural', 'JJ'), ('history', 'NN'), ('museum', 'NN')]                  || Frag: Tickets für das Naturhistorische Museum || would you like tickets for the naturisch*v museum*z
+PFA: [('which', 'WDT'), ('bus', 'NN'), ('goes', 'VBZ'), ('there', 'RB')]                  || Frag: Welcher Bus fährt dorthin? || whose bus go there
+PFA: [('where', 'WRB'), ('is', 'VBZ'), ('madame', 'JJ'), ('tussauds', 'NNS')]                  || Frag: Wo ist Madame Tussauds? || where is the madame tussauds*z
+PFA: [('where', 'WRB'), ('is', 'VBZ'), ('the', 'DT'), ('tate', 'NN'), ('modern', 'NN')]                  || Frag: Wo ist die Tate Modern? || where is the date modern
+PFA: [('which', 'WDT'), ('bus', 'NN'), ('goes', 'VBZ'), ('there', 'RB')]                  || Frag: Welcher Bus fährt dorthin? || whose bus go there
+PFA: [('the', 'DT'), ('tower', 'NN'), ('is', 'VBZ'), ('near', 'IN'), ('tower', 'NN'), ('bridge', 'NN')]                  || Sag: Der Tower ist nahe der Tower Bridge || the tower is near the tower bridge
+PFA: [('i', 'NN'), ('would', 'MD'), ('like', 'VB'), ('pay', 'NN'), ('by', 'IN'), ('visa', 'NN')]                  || Sag: Ich möchte mit Visa bezahlen || i would like pay by visa
+GFA: [('where', 'WRB'), ('is', 'VBZ'), ('the', 'DT'), ('hairdresser', 'NN')]                  || Frag: Wo ist der Coiffeur? || where is the head cutter
+PFA: [('in', 'IN'), ('the', 'DT'), ('room', 'NN'), ('is', 'VBZ'), ('not', 'RB'), ('a', 'DT'), ('shower', 'NN'), ('gel', 'NN')]                  || Sag: Im Zimmer hat es kein Duschgel || in the room is not a shower gel*z
+FR (): [('younger', 'JJR'), ('post', 'NN'), ('card', 'NN')]                  || Sag: Ich möchte mit Postkarte bezahlen
+PFA: [('i', 'NN'), ('would', 'MD'), ('pay', 'VB'), ('with', 'IN'), ('visa', 'NN')]                  || Sag: Ich möchte mit Visa bezahlen || i pay with visa
+PFA: [('i', 'JJ'), ('pay', 'NN'), ('with', 'IN'), ('credit', 'NN'), ('card', 'NN')]                  || Sag: Ich möchte mit Kreditkarte bezahlen || i pay with credit card
+FR (): [('i', 'NN'), ('would', 'MD'), ('like', 'VB'), ('two', 'CD'), ('tickets', 'NNS')]                  || Frag: 3 Tickets
+FR (): [('where', 'WRB'), ('is', 'VBZ'), ('the', 'DT'), ('oxford', 'JJ'), ('street', 'NN')]                  || Frag: Wo ist die Oxford Street?
+FR (): [('salad', 'NN'), ('to', 'TO'), ('go', 'VB'), ('on', 'IN'), ('thursday', 'NN'), ('to', 'TO'), ('go', 'VB')]                  || Sag: Ich muss gehen
+PFA: [('i', 'NN'), ('would', 'MD'), ('pay', 'VB'), ('with', 'IN'), ('visa', 'NN')]                  || Sag: Ich möchte mit Visa bezahlen || i pay with visa
+PFA: [('i', 'NN'), ('would', 'MD'), ('like', 'VB'), ('a', 'DT'), ('orange', 'NN'), ('juice', 'NN')]                  || Frag: einen Orangensaft || i would like a orange juice*z
+GFA: [('i', 'JJ'), ("'m", 'VBP'), ('from', 'IN'), ('scotland', 'NN'), ('a', 'DT'), ('i', 'JJ'), ("'m", 'VBP'), ('from', 'IN'), ('scotland', 'NN')]                  || Sag: Ich bin aus Schottland || i'm from schottland*v i'm from schottland*v
+FR (): [('this', 'DT'), ('is', 'VBZ'), ('too', 'RB'), ('lift', 'JJ')]                  || Sag: Dies ist zu weit
+GFA: [('germany', 'NN'), ('is', 'VBZ'), ('not', 'RB'), ('in', 'IN'), ('africa', 'NN')]                  || Sag: Deutschland ist nicht in Afrika || germany isn't it in africa
+GFA: [('i', 'NN'), ('would', 'MD'), ('like', 'VB'), ('my', 'PRP$'), ('steak', 'NN'), ('rare', 'NN')]                  || Frag: mein Steak rare || i would like my steak*z raw
+PFA: [('is', 'VBZ'), ('can', 'MD'), ('i', 'VB'), ('pay', 'NN'), ('with', 'IN'), ('credit', 'NN'), ('card', 'NN')]                  || Sag: Ich möchte mit Kreditkarte bezahlen || ggg can i pay with credit card
+PFA: [('how', 'WRB'), ('much', 'JJ'), ('does', 'VBZ'), ('it', 'PRP'), ('cost', 'VB')]                  || Frag: Wie viel kostet es? || how much do it cost
+FR (): [('i', 'NN'), ('would', 'MD'), ('like', 'VB'), ('to', 'TO')]                  || Frag: eine Cola
+FR (): [('thirty', 'NN'), ('three', 'CD')]                  || Frag: Grösse 43
+PFA: [('i', 'NN'), ('would', 'MD'), ('like', 'VB'), ('to', 'TO'), ('go', 'VB'), ('on', 'IN'), ('tomorrow', 'NN')]                  || Sag: Ich möchte morgen gehen || i would like to go on tomorrow
+FR (): [('i', 'NN'), ('would', 'MD'), ('like', 'VB'), ('two', 'CD'), ('musical', 'JJ'), ('tickets', 'NNS'), ('for', 'IN'), ('mamma', 'NN'), ('mia', 'NN')]                  || Frag: 2 Tickets für Mamma Mia
+PFA: [('i', 'NN'), ('would', 'MD'), ('like', 'VB'), ('pay', 'NN'), ('with', 'IN'), ('credit', 'NN'), ('card', 'NN')]                  || Sag: Ich möchte mit Kreditkarte bezahlen || i would like pay with credit card
+FR (): [('i', 'NN'), ('would', 'MD'), ('like', 'VB'), ('to', 'TO'), ('sit', 'VB'), ('in', 'IN'), ('the', 'DT'), ('from', 'IN')]                  || Sag: Ich möchte vorne sitzen
+PFA: [('i', 'NN'), ('would', 'MD'), ('like', 'VB'), ('to', 'TO'), ('pay', 'VB'), ('with', 'IN'), ('credit', 'NN'), ('card', 'NN')]                  || Sag: Ich möchte mit Kreditkarte bezahlen || i would like to pay with credit card
+FR (): [('do', 'VBP'), ('you', 'PRP'), ('have', 'VB'), ('a', 'DT'), ('hairdryer', 'NN')]                  || Sag: Im Zimmer hat es keinen Haarföhn
+PFA: [('can', 'MD'), ('i', 'VB'), ('have', 'VBP'), ('a', 'DT'), ('ticket', 'NN'), ('to', 'TO'), ('piccadilly', 'RB'), ('circus', 'VB')]                  || Frag: ein Ticket zum Piccadilly Circus || can i have ticket to piccadilly circus
+GFA: [('i', 'NN'), ('would', 'MD'), ('like', 'VB'), ('four', 'CD'), ('tickets', 'NNS'), ('for', 'IN'), ('the', 'DT'), ('phantom', 'NN'), ('of', 'IN'), ('the', 'DT'), ('opera', 'NN')]                  || Frag: 4 Tickets für das Phantom der Oper || i would like four tickets for the phantom der*v opfer*v
+GFA: [('i', 'NN'), ('would', 'MD'), ('like', 'VB'), ('to', 'TO'), ('leave', 'VB'), ('monday', 'JJ'), ('night', 'NN')]                  || Sag: Ich möchte am Montagabend abreisen || i would like to leave morning night
+FR (): [('i', 'NNS'), ('have', 'VBP'), ('two', 'CD'), ('younger', 'JJR'), ('brothers', 'NNS')]                  || Sag: Ich habe einen jüngeren Bruder
+FR (): [('a', 'DT'), ('thursday', 'NN')]                  || Sag: Ich bin aus Spanien
+FR (): [('yes', 'RB'), ('i', 'JJ'), ("'d", 'MD'), ('like', 'VB'), ('a', 'DT'), ('hairdresser', 'NN')]                  || Frag: ein schwarzes Sweatshirt
+PFA: [('i', 'JJ'), ('pay', 'NN'), ('with', 'IN'), ('swiss', 'JJ'), ('francs', 'NNS')]                  || Sag: Ich möchte mit Schweizer Franken bezahlen || i pay with swiss francs
+GFA: [('my', 'PRP$'), ('name', 'NN'), ('is', 'VBZ'), ('maddalena', 'JJ')]                  || Sag: Ich heisse Maddalena || my name is magdalena
+FR (): [('can', 'MD'), ('i', 'VB'), ('have', 'VBP'), ('six', 'CD'), ('saturday', 'NN')]                  || Frag: Ticket für dieses Musical
+FR (): [('i', 'NN'), ('would', 'MD'), ('like', 'VB'), ('to', 'TO'), ('pay', 'VB'), ('with', 'IN'), ('euros', 'NNS')]                  || Sag: Ich möchte mit Pfund bezahlen
+FR (): [('with', 'IN'), ('card', 'NN')]                  || Sag: Ich heisse Andrew
+FR (): [('i', 'NN'), ('want', 'VBP')]                  || Frag: 3 Tickets
+FR (): [('i', 'NN'), ('would', 'MD'), ('like', 'VB'), ('a', 'DT'), ('white', 'JJ'), ('shirt', 'NN')]                  || Frag: ein weisses T-Shirt
+PFA: [('i', 'NN'), ('will', 'MD'), ('have', 'VB'), ('boot', 'NN')]                  || Frag: Stiefel || i would have boots
+FR (): [('i', 'NN'), ('would', 'MD'), ('like', 'VB'), ('four', 'CD'), ('museum', 'NN')]                  || Frag: violette Jeans
+FR (): [('i', 'NN'), ('would', 'MD'), ('row', 'VB'), ('hairdryer', 'NN')]                  || Sag: Ich bin aus Schottland
+PFA: [('i', 'JJ'), ("'m", 'VBP'), ('from', 'IN'), ('german', 'JJ')]                  || Sag: Ich bin aus Deutschland || i'm from german
+FR (): [('my', 'PRP$'), ('name', 'NN'), ('is', 'VBZ'), ('paolo', 'JJ')]                  || Sag: Ich heisse Mona
+FR (): [('i', 'NN'), ('would', 'MD'), ('like', 'VB'), ('to', 'TO'), ('sit', 'VB'), ('in', 'IN'), ('the', 'DT'), ('seventh', 'JJ'), ('row', 'NN')]                  || Sag: Ich möchte in der zehnten Reihe sitzen
+FR (): [('hairdryer', 'NN')]                  || Sag: Mir geht es gut
+PFA: [('i', 'NNS'), ('need', 'VBP'), ('a', 'DT'), ('small', 'JJ')]                  || Frag: eine S || i need small
+FR (): [('i', 'NN'), ('buy', 'VBP')]                  || Sag: Mir geht es gut
+PFA: [('i', 'NNS'), ('need', 'VBP'), ('a', 'DT'), ('small', 'JJ')]                  || Frag: eine S || i need small
+FR (): [('i', 'NN'), ('want', 'VBP'), ('the', 'DT'), ('bill', 'NN')]                  || Sag: Ich muss gehen
+PFA: [('saint', 'NN'), ('pauls', 'JJ'), ('cathedral', 'NN'), ('is', 'VBZ'), ('near', 'IN'), ('bank', 'NN'), ('of', 'IN'), ('england', 'NN')]                  || Sag: Saint Pauls Cathedral ist nahe der Bank of England || saint pauls cathedral is near bank of england
+PFA: [('i', 'NN'), ('would', 'MD'), ('like', 'VB'), ('to', 'TO'), ('leave', 'VB'), ('next', 'JJ'), ('week', 'NN')]                  || Sag: Ich möchte nächste Woche abreisen || i would like to leave on next week
+PFA: [('i', 'NN'), ('would', 'MD'), ('like', 'VB'), ('to', 'TO'), ('pay', 'VB'), ('with', 'IN'), ('credit', 'NN'), ('card', 'NN')]                  || Sag: Ich möchte mit Kreditkarte bezahlen || i would like to pay with credit card
+PFA: [('i', 'NN'), ('would', 'MD'), ('like', 'VB'), ('to', 'TO'), ('leave', 'VB'), ('next', 'JJ'), ('week', 'NN')]                  || Sag: Ich möchte nächste Woche abreisen || i would like to leave on next week
+FR (): [('i', 'NN'), ('want', 'VBP'), ('liz', 'NN')]                  || Frag: meinen Hamburger rare
+FR (): [('i', 'NN'), ('would', 'MD'), ('like', 'VB'), ('a', 'DT'), ('sweatshirt', 'NN')]                  || Frag: ein weisses Hemd
+PFA: [('i', 'NN'), ('would', 'MD'), ('like', 'VB'), ('the', 'DT'), ('dessert', 'NN'), ('menu', 'NN')]                  || Frag: Ich möchte die Dessertkarte || i would like my dessert menu
+FR (): [('i', 'NN'), ('would', 'MD'), ('like', 'VB'), ('to', 'TO'), ('sit', 'VB'), ('in', 'IN'), ('the', 'DT'), ('sixth', 'JJ'), ('row', 'NN')]                  || Sag: Ich möchte in der fünften Reihe sitzen
+PFA: [('i', 'NNS'), ('do', 'VBP'), ('not', 'RB'), ('want', 'VB'), ('this', 'DT'), ('jeans', 'NNS')]                  || Sag du möchtest nicht: diese Jeans || i do not want this jeans
+FR (): [('i', 'NN'), ('would', 'MD'), ('like', 'VB'), ('three', 'CD'), ('musical', 'JJ'), ('tickets', 'NNS')]                  || Frag: 2 Musical-Tickets
+PFA: [('i', 'NN'), ('would', 'MD'), ('like', 'VB'), ('to', 'TO'), ('sit', 'VB'), ('in', 'IN'), ('the', 'DT'), ('sixth', 'JJ'), ('row', 'NN')]                  || Sag: Ich möchte in der sechsten Reihe sitzen || i would like sit in the sixth row
+PFA: [('i', 'NNS'), ('do', 'VBP'), ('not', 'RB'), ('want', 'VB'), ('this', 'DT'), ('jeans', 'NNS')]                  || Sag du möchtest nicht: diese Jeans || i do not want this jeans
+FR (): [('i', 'NNS'), ('do', 'VBP'), ('not', 'RB'), ('want', 'VB'), ('dessert', 'NN')]                  || Sag du möchtest nicht: dieses Hemd
+FR (): [('i', 'NN'), ('would', 'MD'), ('like', 'VB'), ('carrots', 'NNS')]                  || Frag: Hosen
+FR (): [('the', 'DT'), ('room', 'NN'), ('has', 'VBZ'), ('no', 'DT'), ('hairdryer', 'NN')]                  || Sag: Im Zimmer hat es keinen Haarföhn
+FR (): [('can', 'MD'), ('i', 'VB'), ('buy', 'VB')]                  || Sag: Mir geht es gut
+FR (): [('a', 'DT'), ('hairdryer', 'NN')]                  || Sag: Mir geht es gut
+FR (): [('i', 'NNS'), ('do', 'VBP'), ('not', 'RB'), ('thursday', 'VB')]                  || Sag, dass du es nicht möchtest
+FR (): [('i', 'NN'), ('would', 'MD'), ('like', 'VB'), ('a', 'DT'), ('fanta', 'NN')]                  || Frag: Auberginen
+FR (): [('i', 'NN'), ('would', 'MD'), ('like', 'VB'), ('brown', 'JJ'), ('sandals', 'NNS')]                  || Frag: braune Hosen
+FR (): [('i', 'NN'), ('would', 'MD'), ('like', 'VB'), ('the', 'DT'), ('check', 'NN')]                  || Frag: Hosen
+PFA: [('i', 'NN'), ('would', 'MD'), ('like', 'VB'), ('a', 'DT'), ('orange', 'NN'), ('juice', 'NN')]                  || Frag: einen Orangensaft || i would like a orange juice
+FR (): [('i', 'NN'), ('would', 'MD'), ('like', 'VB'), ('jeans', 'NNS')]                  || Frag: Bohnen
+PFA: [('i', 'NN'), ('would', 'MD'), ('like', 'VB'), ('to', 'TO'), ('pay', 'VB'), ('with', 'IN'), ('credit', 'NN'), ('card', 'NN')]                  || Sag: Ich möchte mit Kreditkarte bezahlen || i would like to pay with credit card
+FR (): [('i', 'NN'), ('want', 'VBP'), ('boots', 'NNS')]                  || Frag: Junior Suite
+FR (): [('i', 'JJ'), ("'d", 'MD'), ('like', 'VB'), ('to', 'TO'), ('sit', 'VB'), ('in', 'IN'), ('the', 'DT'), ('seventh', 'JJ'), ('row', 'NN'), ('roast', 'NN')]                  || Sag: Ich möchte in der siebten Reihe sitzen
+FR (): [('can', 'MD'), ('i', 'VB'), ('have', 'VBP'), ('holiday', 'NN')]                  || Frag: 2 Tickets
+PFA: [('i', 'NNS'), ('have', 'VBP'), ('not', 'RB'), ('a', 'DT'), ('reservation', 'NN')]                  || Sag: Ich habe keine Reservation || i have not a reservation
+PFA: [('i', 'NN'), ('would', 'MD'), ('like', 'VB'), ('pay', 'NN'), ('by', 'IN'), ('post', 'NN'), ('card', 'NN')]                  || Sag: Ich möchte mit Postkarte bezahlen || i would like payed by post card
+PFA: [('i', 'NN'), ('would', 'MD'), ('pay', 'VB'), ('by', 'IN'), ('visa', 'NN')]                  || Sag: Ich möchte mit Visa bezahlen || i would payed by visa
+PFA: [('i', 'NN'), ('would', 'MD'), ('please', 'VB'), ('a', 'DT'), ('room', 'NN'), ('for', 'IN'), ('seven', 'CD'), ('nights', 'NNS')]                  || Frag: Zimmer für 7 Nächte || i would please a room for seven nights*z
+FR (): [('no', 'DT'), ('i', 'NN'), ('do', 'VBP'), ("n't", 'RB'), ('have', 'VB'), ('a', 'DT')]                  || Sag: Ich habe keine Reservation
+FR (): [('i', 'NN'), ('would', 'MD'), ('like', 'VB'), ('brown', 'NN')]                  || Frag: Stiefel
+FR (): [('i', 'NN'), ('would', 'MD'), ('like', 'VB'), ('a', 'DT'), ('tea', 'NN')]                  || Frag: Jeans
+FR (): [('i', 'NN'), ('would', 'MD'), ('like', 'VB'), ('pea', 'NN')]                  || Frag: Stiefel
+PFA: [('no', 'DT'), ('thank', 'NN'), ('you', 'PRP'), ('the', 'DT'), ('jeans', 'NNS'), ('is', 'VBZ'), ('too', 'RB'), ('expensive', 'JJ')]                  || Sag: Die Jeans ist zu teuer || no thank you the jeans is too expensive
+FR (): [('i', 'NN'), ('would', 'MD'), ('like', 'VB'), ('a', 'DT'), ('ticket', 'NN'), ('to', 'TO'), ('the', 'DT'), ('holidays', 'NNS')]                  || Frag: ein Ticket nach Notting Hill
+FR (): [('can', 'MD'), ('i', 'VB'), ('pay', 'NN'), ('with', 'IN'), ('post', 'NN'), ('card', 'NN')]                  || Sag: Ich möchte mit Mastercard bezahlen
+FR (): [('my', 'PRP$'), ('name', 'NN'), ('is', 'VBZ'), ('lisbon', 'JJ')]                  || Sag: Ich habe keine Reservation
+FR (): [('for', 'IN'), ('tonight', 'NN')]                  || Sag: Mir geht es gut
+FR (): [('i', 'NN'), ('want', 'VBP'), ('junior', 'NN')]                  || Frag: Stiefel
+FR (): [('i', 'NN'), ('want', 'VBP'), ('a', 'DT'), ('hairdryer', 'NN')]                  || Frag: ein Hemd
+FR (): [('i', 'NNS'), ('like', 'VBP'), ('a', 'DT'), ('suite', 'NN')]                  || Frag: Suite
+PFA: [('a', 'DT'), ('ticket', 'NN'), ('to', 'TO'), ('green', 'VB'), ('park', 'NN')]                  || Frag: ein Ticket zum Green Park || a ticket to the green park ggg
+PFA: [('i', 'NN'), ('want', 'VBP'), ('pay', 'NN'), ('with', 'IN'), ('credit', 'NN'), ('card', 'NN')]                  || Sag: Ich möchte mit Kreditkarte bezahlen || i want pay with credit card
+FR (): [('i', 'NN'), ('would', 'MD'), ('like', 'VB'), ('to', 'TO'), ('leave', 'VB'), ('on', 'IN'), ('sunday', 'JJ'), ('morning', 'NN')]                  || Sag: Ich möchte am Montagmorgen abreisen
+FR (): [('i', 'NN'), ('would', 'MD'), ('like', 'VB'), ('a', 'DT'), ('double', 'JJ'), ('room', 'NN')]                  || Frag: einen Hamburger
+FR (): [('where', 'WRB'), ('is', 'VBZ'), ('the', 'DT'), ('hotel', 'NN'), ('bar', 'NN')]                  || Frag: Wo ist das London Eye?
+GFA: [('i', 'NNS'), ('have', 'VBP'), ('a', 'DT'), ('room', 'NN'), ('for', 'IN'), ('seven', 'CD'), ('nights', 'NNS')]                  || Frag: Zimmer für 7 Nächte || i have a bedroom for seven nights
+PFA: [('i', 'NN'), ('would', 'MD'), ('like', 'VB'), ('to', 'TO'), ('leave', 'VB'), ('on', 'IN'), ('saturday', 'JJ'), ('morning', 'NN')]                  || Sag: Ich möchte am Samstagmorgen abreisen || i would like leave on saturday morning
+GFA: [('a', 'DT'), ('suite', 'NN')]                  || Frag: Suite || a suit
+FR (): [('i', 'JJ'), ("'m", 'VBP'), ('from', 'IN'), ('austria', 'NN')]                  || Sag: Ich bin aus Australien
+PFA: [('i', 'NN'), ('would', 'MD'), ('like', 'VB'), ('to', 'TO'), ('pay', 'VB'), ('with', 'IN'), ('euros', 'NNS')]                  || Sag: Ich möchte mit Euros bezahlen || i would like to pay with euro
+PFA: [('i', 'NN'), ('want', 'VBP'), ('a', 'DT'), ('ticket', 'NN'), ('to', 'TO'), ('notting', 'NN'), ('hill', 'NN')]                  || Frag: ein Ticket nach Notting Hill || i want a ticket to the nothing hill
+FR (): [('a', 'DT'), ('single', 'JJ'), ('room', 'NN'), ('bar', 'NN')]                  || Frag: Einzelzimmer
+FR (): [('i', 'JJ'), ("'m", 'VBP'), ('from', 'IN')]                  || Frag: Stiefel
+FR (): [('i', 'NN'), ('want', 'VBP'), ('tuesday', 'NN'), ('for', 'IN'), ('four', 'CD'), ('nights', 'NNS')]                  || Frag: Zimmer für 4 Nächte
+FR (): [('i', 'NN'), ("'m", 'VBP'), ('turkey', 'NN')]                  || Sag: Ich heisse Andrew
+PFA: [('i', 'NN'), ('would', 'MD'), ('pay', 'VB'), ('with', 'IN'), ('swiss', 'JJ'), ('francs', 'NNS')]                  || Sag: Ich möchte mit Schweizer Franken bezahlen || then i would pay with swiss francs
+PFA: [('the', 'DT'), ('capital', 'NN'), ('from', 'IN'), ('portugal', 'NN'), ('is', 'VBZ'), ('lisbon', 'JJ')]                  || Sag: Die Hauptstadt von Portugal ist Lissabon || the capital city from portugal is lisabon
+GFA: [('where', 'WRB'), ('is', 'VBZ'), ('the', 'DT'), ('grocery', 'NN'), ('store', 'NN')]                  || Frag: Wo ist der Lebensmittelladen? || uh where is the grocery*z store
+PFA: [('i', 'NN'), ('want', 'VBP'), ('tickets', 'NNS'), ('for', 'IN'), ('the', 'DT'), ('natural', 'JJ'), ('history', 'NN'), ('museum', 'NN')]                  || Frag: Tickets für das Naturhistorische Museum || i want uh tickets for the nature history museum
+PFA: [('do', 'VBP'), ('you', 'PRP'), ('have', 'VB'), ('a', 'DT'), ('fitness', 'NN'), ('studio', 'NN')]                  || Frag: Gibt es ein Fitnessstudio? || do you got a fitness studio
+FR (): [('have', 'VB'), ('my', 'PRP$'), ('passport', 'NN')]                  || Sag: Dies ist mein Pass
+GFA: [('i', 'NN'), ('want', 'VBP'), ('a', 'DT'), ('suite', 'JJ'), ('please', 'NN')]                  || Frag: Suite || i want a suit please
+PFA: [('i', 'NN'), ('want', 'VBP'), ('to', 'TO'), ('pay', 'VB'), ('with', 'IN'), ('credit', 'NN'), ('card', 'NN'), ('please', 'NN')]                  || Sag: Ich möchte mit Kreditkarte bezahlen || i want to pay with credit card please
+PFA: [('can', 'MD'), ('i', 'VB'), ('pay', 'NN'), ('with', 'IN'), ('credit', 'NN'), ('card', 'NN')]                  || Sag: Ich möchte mit Kreditkarte bezahlen || can i pay with credit card
+FR (): [('the', 'DT'), ('is', 'VBZ'), ('there', 'EX'), ('a', 'DT'), ('grocery', 'NN'), ('store', 'NN')]                  || Frag: Gibt es einen Lebensmittelladen?
+FR (): [('i', 'NN'), ('want', 'VBP'), ('pay', 'NN'), ('with', 'IN'), ('a', 'DT'), ('room', 'NN'), ('for', 'IN'), ('three', 'CD'), ('nights', 'NNS')]                  || Frag: Zimmer für 3 Nächte
+FR (): [('i', 'NN'), ('want', 'VBP'), ('a', 'DT'), ('single', 'JJ'), ('row', 'NN')]                  || Frag: Einzelzimmer
+FR (): [('where', 'WRB'), ('is', 'VBZ'), ('the', 'DT'), ('national', 'JJ'), ('a', 'DT'), ('natural', 'JJ'), ('history', 'NN'), ('museum', 'NN')]                  || Frag: Wo ist das Naturhistorische Museum?
+FR (): [('i', 'NN'), ('would', 'MD'), ('like', 'VB'), ('five', 'CD'), ('tickets', 'NNS'), ('to', 'TO'), ('london', 'VB')]                  || Frag: 4 Tickets nach London
+GFA: [('my', 'PRP$'), ('name', 'NN'), ('is', 'VBZ'), ('andy', 'JJ')]                  || Sag: Ich heisse Andy || my name is an*a
+FR (): [('i', 'NN'), ('am', 'VBP'), ('from', 'IN'), ('swiss', 'JJ'), ('switzerland', 'NN')]                  || Sag: Ich bin aus der Schweiz
+GFA: [('that', 'DT'), ('is', 'VBZ'), ('too', 'RB'), ('large', 'JJ')]                  || Sag: Dies ist zu gross || that is too loose
+FR (): [('i', 'NN'), ('would', 'MD'), ('like', 'VB'), ('carrots', 'NNS')]                  || Frag: Scones
+PFA: [('i', 'NN'), ('would', 'MD'), ('like', 'VB'), ('to', 'TO'), ('pay', 'VB'), ('with', 'IN'), ('credit', 'NN'), ('card', 'NN')]                  || Sag: Ich möchte mit Kreditkarte bezahlen || i would like to pay with credit card
+PFA: [('i', 'NNS'), ('have', 'VBP'), ('smaller', 'JJR'), ('notes', 'NNS')]                  || Sag: Ich habe kleinere Note || i have smaller note
+PFA: [('i', 'NN'), ('have', 'VBP'), ('only', 'RB'), ('large', 'JJ'), ('notes', 'NNS')]                  || Sag: Ich habe nur grosse Noten || i have only large note
+PFA: [('i', 'NN'), ('would', 'MD'), ('like', 'VB'), ('to', 'TO'), ('pay', 'VB'), ('with', 'IN'), ('credit', 'NN'), ('card', 'NN')]                  || Sag: Ich möchte mit Kreditkarte bezahlen || i would like to pay with credit card
+PFA: [('i', 'NN'), ('want', 'VBP'), ('to', 'TO'), ('go', 'VB')]                  || Sag: Ich muss gehen || i want go
+FR (): [('can', 'MD'), ('i', 'VB'), ('have', 'VBP'), ('the', 'DT'), ('a', 'DT'), ('pie', 'NN')]                  || Frag: Apfelkuchen
+FR (): [('room', 'NN'), ('lift', 'NN')]                  || Frag: Gibt es einen Lift?
+PFA: [('can', 'MD'), ('i', 'VB'), ('pay', 'NN'), ('with', 'IN'), ('credit', 'NN'), ('card', 'NN')]                  || Sag: Ich möchte mit Kreditkarte bezahlen || can i pay with credit card
+PFA: [('can', 'MD'), ('i', 'VB'), ('pay', 'NN'), ('with', 'IN'), ('credit', 'NN'), ('card', 'NN')]                  || Sag: Ich möchte mit Kreditkarte bezahlen || can i pay with credit card
+GFA: [('i', 'NNS'), ('need', 'VBP'), ('a', 'DT'), ('ticket', 'NN'), ('to', 'TO'), ('westminster', 'VB')]                  || Frag: ein Ticket nach Westminster || do i need a ticket to westminster
+FR (): [('i', 'NN'), ('lisbon', 'VBP'), ('musical', 'JJ')]                  || Frag: ein Ticket nach Westminster
+PFA: [('i', 'NN'), ('would', 'MD'), ('like', 'VB'), ('to', 'TO'), ('pay', 'VB'), ('with', 'IN'), ('credit', 'NN'), ('card', 'NN')]                  || Sag: Ich möchte mit Kreditkarte bezahlen || i would like to pay with credit card
+PFA: [('i', 'NN'), ('would', 'MD'), ('like', 'VB'), ('to', 'TO'), ('pay', 'VB'), ('with', 'IN'), ('credit', 'NN'), ('card', 'NN')]                  || Sag: Ich möchte mit Kreditkarte bezahlen || i would like to pay with credit card
+FR (): [('i', 'NN'), ('want', 'VBP'), ('like', 'IN'), ('to', 'TO'), ('buy', 'VB'), ('some', 'DT'), ('boots', 'NNS')]                  || Frag: Stiefel
+PFA: [('could', 'MD'), ('i', 'VB'), ('see', 'VBP'), ('the', 'DT'), ('dessert', 'NN'), ('menu', 'NN')]                  || Frag: Ich möchte die Dessertkarte || could i see dessert menu
+PFA: [('can', 'MD'), ('i', 'VB'), ('pay', 'NN'), ('with', 'IN'), ('credit', 'NN'), ('card', 'NN')]                  || Sag: Ich möchte mit Kreditkarte bezahlen || can i pay with credit card
+PFA: [('i', 'NN'), ('would', 'MD'), ('like', 'VB'), ('pay', 'NN'), ('with', 'IN'), ('credit', 'NN'), ('card', 'NN')]                  || Sag: Ich möchte mit Kreditkarte bezahlen || i would like play with credit card
+FR (): [('i', 'NNS'), ('like', 'VBP'), ('a', 'DT'), ('room', 'NN'), ('for', 'IN'), ('three', 'CD'), ('nights', 'NNS')]                  || Frag: Zimmer für 3 Nächte
+GFA: [('this', 'DT'), ('is', 'VBZ'), ('here', 'RB'), ('a', 'DT'), ('hotel', 'NN'), ('restaurant', 'NN')]                  || Frag: Gibt es ein Hotelrestaurant? || give it here a hotel restaurant
+FR (): [('one', 'CD'), ('room', 'NN'), ('for', 'IN'), ('orange', 'NN'), ('juice', 'NN')]                  || Frag: Zimmer für 1 Woche
+FR (): [('i', 'NN'), ('would', 'MD'), ('like', 'VB'), ('cake', 'VB')]                  || Frag: Doppelzimmer
+FR (): [('i', 'NNS'), ('have', 'VBP'), ('no', 'DT'), ('reservation', 'NN'), ('red', 'VBD'), ('reservation', 'NN')]                  || Sag: Ich habe keine Reservation
+PFA: [('i', 'NN'), ('would', 'MD'), ('pay', 'VB'), ('with', 'IN'), ('euros', 'NNS')]                  || Sag: Ich möchte mit Euros bezahlen || i would pay with euros
+FR (): [('i', 'NN'), ('am', 'VBP'), ('from', 'IN'), ('scotland', 'NN')]                  || Sag: Ich bin aus Kanada
+PFA: [('i', 'NN'), ('would', 'MD'), ('like', 'VB'), ('to', 'TO'), ('sit', 'VB'), ('in', 'IN'), ('the', 'DT'), ('eighth', 'JJ'), ('row', 'NN')]                  || Sag: Ich möchte in der achten Reihe sitzen || i would like sit in the eighth row
+FR (): [('could', 'MD'), ('i', 'VB'), ('have', 'VBP'), ('some', 'DT'), ('please', 'NN')]                  || Frag: Auberginen
+PFA: [('i', 'NN'), ('want', 'VBP'), ('to', 'TO'), ('pay', 'VB'), ('with', 'IN'), ('visa', 'NN')]                  || Sag: Ich möchte mit Visa bezahlen || i want to pay with the visa
+PFA: [('i', 'NN'), ('would', 'MD'), ('pay', 'VB'), ('with', 'IN'), ('mastercard', 'NN')]                  || Sag: Ich möchte mit Mastercard bezahlen || i would pay with mastercard
+PFA: [('i', 'JJ'), ("'m", 'VBP'), ('from', 'IN'), ('germany', 'NN')]                  || Sag: Ich bin aus Deutschland || i came from germany
+FR (): [('i', 'NN'), ('would', 'MD'), ('like', 'VB'), ('to', 'TO'), ('leave', 'VB'), ('a', 'DT'), ('hamburger', 'NN')]                  || Frag: einen Hamburger
+PFA: [('this', 'DT'), ('is', 'VBZ'), ('near', 'IN'), ('of', 'IN'), ('the', 'DT'), ('bank', 'NN'), ('of', 'IN'), ('england', 'NN')]                  || Sag: Es ist nahe der Bank of England || this is near of the bank of england
+FR (): [('i', 'JJ'), ("'m", 'VBP'), ('from', 'IN'), ('turkey', 'NN')]                  || Sag: Ich heisse Thomas
+PFA: [('i', 'NNS'), ('do', 'VBP'), ("n't", 'RB'), ('have', 'VB'), ('any', 'DT'), ('reservation', 'NN')]                  || Sag: Ich habe keine Reservation || i don't have an reservation
+FR (): [('my', 'PRP$'), ('name', 'NN'), ('is', 'VBZ'), ('paula', 'JJ'), ('paolo', 'NN')]                  || Sag: Ich heisse Paolo
+FR (): [('yes', 'RB'), ('i', 'NNS'), ('have', 'VBP'), ('the', 'DT'), ('of', 'IN'), ('no', 'DT'), ('i', 'NN'), ('have', 'VBP'), ('no', 'DT'), ('reservation', 'NN')]                  || Sag: Ich habe keine Reservation
+PFA: [('is', 'VBZ'), ('there', 'EX'), ('a', 'DT'), ('fitness', 'NN'), ('studio', 'NN')]                  || Frag: Gibt es ein Fitnessstudio? || gives a fitness studio
+
+INCORRECT UTTERANCES (726)
+CorrectReject    544
+GrossFalseAccept 29*3.0 = 87.0
+PlainFalseAccept 153
+RejectionRate    0.69
+
+CORRECT UTTERANCES (1797)
+CorrectAccept    1659
+FalseReject      138
+RejectionRate    0.08
+
+D                9.04
